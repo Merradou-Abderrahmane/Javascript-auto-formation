@@ -7,8 +7,8 @@
 ### -Operators :white_check_mark:
 ### -Events :white_check_mark:
 ### -Strings :white_check_mark:
-### -Numbers 
-### -If ... Else
+### -Numbers :white_check_mark:
+### -If ... Else :white_check_mark:
 ### -Switch…Case
 ### -Arrays
 ### -Functions
