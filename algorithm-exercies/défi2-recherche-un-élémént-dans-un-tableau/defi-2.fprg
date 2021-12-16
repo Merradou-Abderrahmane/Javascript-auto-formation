@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="solicode"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-12-16 12:31:30 PM"/>
+        <attribute name="created" value="c29saWNvZGU7REVTS1RPUC1HVkdSRkxOOzIwMjEtMTItMTY7MDk6MTM6NTkgQU07MzIzOA=="/>
+        <attribute name="edited" value="c29saWNvZGU7REVTS1RPUC1HVkdSRkxOOzIwMjEtMTItMTY7MTI6MzE6MzAgUE07MTszMzQ0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="isFound" type="Boolean" array="False" size=""/>
+            <assign variable="isFound" expression="false"/>
+            <declare name="listItems" type="String" array="True" size="4"/>
+            <assign variable="listItems[0]" expression="&quot;bread&quot;"/>
+            <assign variable="listItems[1]" expression="&quot;milk&quot;"/>
+            <assign variable="listItems[2]" expression="&quot;hat&quot;"/>
+            <assign variable="listItems[3]" expression="&quot;book&quot;"/>
+            <declare name="userInput" type="String" array="False" size=""/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <input variable="userInput"/>
+            <for variable="i" start="0" end="3" direction="inc" step="1">
+                <if expression="userInput == listItems[i]">
+                    <then>
+                        <assign variable="isFound" expression="true"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <if expression="isFound">
+                <then>
+                    <output expression="&quot; We found your item ! &quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;sorry ! item not found&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
