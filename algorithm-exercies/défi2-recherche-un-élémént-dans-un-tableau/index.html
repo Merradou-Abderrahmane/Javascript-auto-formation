@@ -4,19 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Defi-2</title>
 </head>
 <body>
     <script>
-        var itemsList = ["pc", "phone", "tablet", "headphones"];
-        
-        var userSearch = prompt(" search an item : ")  
-            if (itemsList == userSearch){
-                alert(userSearch + " is found");
+        // declaring variabels
+        var itemList = [];
+        var userInput;
+        var isFound;
+        var i;
+
+        //  seize 
+        itemList [0] = "bread";
+        itemList [1] = "milk";
+        itemList [2] = "hat";
+        itemList [3] = "book";
+        isFound = false;
+        userInput = prompt("Search for an item : ")
+        // Traitement 
+        for(i=0 ; i<=3; i++){
+            if (userInput == itemList[i]){
+                isFound = true;
+                break;
+            }
+        }
+            if (isFound){
+                alert("We found your item !")
             }
             else {
-             alert(userSearch + " is not found ")
+                alert("sorry ! item not found")
             }
+
     </script>
 </body>
 </html>
