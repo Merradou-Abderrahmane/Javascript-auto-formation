@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Défi 3</title>
+</head>
+<body>
+    <script>
+        // declaring variables
+        var listNumber ;
+        var maxValue ;
+        // seize
+        listNumber = [1, 3, 6, 9, 12, 15, 18, 21, 24, 27];
+        maxValue = listNumber[0]
+        // Traitement 
+        for (var i=0; i< listNumber.length; i++){
+           if(listNumber[i] >= maxValue)
+           maxValue = listNumber[i];
+           console.log(maxValue);
+        }
+           alert(maxValue);
+    </script>
+</body>
+</html>
