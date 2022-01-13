@@ -10,16 +10,13 @@
     <script>
         fetch('https://api.openweathermap.org/data/2.5/weather?q=tanger&appid=d78f7c47ab341e4363a663482f4b3470')
 
+        .then (function(reponse){
+            return reponse.json()
+        })
 
-
-
-.then (function(reponse){
-    return reponse.json()
-})
-
-.then(function(data){
-    console.log(data)
-})
+        .then(function(data){
+            console.log(data)
+        })
         
     </script>
 </body>
